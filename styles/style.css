@@ -1,0 +1,19 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+p,li,h1 {
+  color: rgb(53, 186, 58);
+  width: 500px;
+
+}
+img {
+	height: 400px;
+} 
+
+h1 {
+	font-size: 20px;
+} 
+p {
+	font-size: 20px;
+} 
