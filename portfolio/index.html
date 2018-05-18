@@ -1,0 +1,150 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Karolina Kantorska Front-End Engeenier Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <section class="header__inner">
+        <a  href="#" >
+          <picture>
+            <source media="(max-width: 450px)" srcset="Image/udacity_logo_50.png">
+            <img class='logo' src="Image/udacity_logo_100.png" alt="Udacity logo">
+          </picture>
+        </a>
+        <div class="personal">
+          <h1 id='name'> Karolina Kantorska</h1>
+          <p id='job'> Front-End Developer</p>
+        </div>
+      </section>
+    </header>
+
+    <nav class="nav">
+      <div class="nav__list_menu">
+        <a class="nav__item" id='nav_0' href="#">Menu</a>
+      </div>
+      <div class="nav__list">
+        <a class="nav__item" id='nav_1' href="#">Featured Work</a>
+        <a class="nav__item" id='nav_2' href="#">CV</a>
+        <a class="nav__item" id='nav_3'  href="#">DE/EN</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="content">
+        <picture >
+          <source class="my_photo" media="(max-width: 450px)" srcset="image/Kantotska_Karolina_portfolio_min_400.jpg">
+          <source  class="my_photo" media="(max-width: 800px)" srcset="image/Kantotska_Karolina_portfolio_big_800.jpg">
+          <source  class="my_photo" media="(min-width: 1000px)" srcset="image/Kantotska_Karolina_portfolio_big_1000.jpg">
+          <img  class="my_photo" src="image/Kantotska_Karolina_portfolio_big_1000.jpg" alt="Karolina Kantorska Front-End Developer">
+        </picture>
+
+        <section class="portfolio">
+          <h2>Projects</h2>
+
+          <section class="portfolio2">
+            <section class="project 1">
+                <div class="project_title">
+                  <h3 >Project 1</h3>
+                </div>
+                <div class="project_description">
+                  <p>Placeholder for a text about project 1. Placeholder for a text about project 1 <p>
+                </div>
+                <div class="project_logo" >
+                  <img class="project_img" src="Image/project1.jpg" alt="Project 1">
+                </div>
+            </section>
+            <section class="project 2">
+                <div class="project_title">
+                  <h3 >Project 2</h3>
+                </div>
+                <div class="project_description">
+                  <p class="project_text">Placeholder for a text about project 2. Placeholder for a text about project 2 <p>
+                </div>
+              <div class="project_logo" >
+                <img class="project_img" src="Image/project2.jpg" alt="Project 2">
+              </div>
+            </section>
+            <section class="project 3">
+              <div class="project_title">
+                <h3 >Project 3</h3>
+              </div>
+              <div class="project_description">
+                <p class="project_text">Placeholder for a text about project 3. Placeholder for a text about project 3. <p>
+              </div>
+              <div class="project_logo" >
+                <img class="project_img" src="Image/project3.jpg" alt="Project 3">
+              </div>
+            </section>
+          </section>
+        </section>
+
+        <section class="cv">
+            <h2 class="cv_title">Curriculum Vitae</h2>
+            <table>
+              <tr>
+                <th class='cv_parts'>Personal Details</th>
+              </tr>
+              <tr>
+                <td class="cv_text">Karolina Kantorska</td>
+                <td class="cv_text">041 076 446 75 xx</td>
+                <td class="cv_text">Strasse 11, Zurich</td>
+              </tr>
+
+              <tr>
+                <th class='cv_parts'>Professional Training</th>
+              </tr>
+              <tr>
+                <td class="cv_text">HSR Hochschule für Technik Rapperswil:</td>
+                <td class="cv_text">CAS Frontend Engineering</td>
+                <td class="cv_text">April 2019 - December 2019</td>
+              </tr>
+              <tr>
+                <td class="cv_text">Udacity Nanodegree-Programm:</td>
+                <td class="cv_text">Front-End Web Developer</td>
+                <td class="cv_text">Mai 2018 - November 2018</td>
+              </tr>
+              <tr>
+                <th class='cv_parts'>Academic Education</th>
+              </tr>
+              <tr>
+                <td class="cv_text">Wrocław University of Science and Technology</td>
+                <td class="cv_text">M.Sc. Architecture and urban planning </td>
+                <td class="cv_text">September 2003 - Juni 2009</td>
+              </tr>
+              <tr>
+                <th class='cv_parts'>References</th>
+              </tr>
+            </table>
+
+        </section>
+        <footer>
+        </footer>
+      </section>
+    </main>
+    <script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector("#nav_0");
+      var main = document.querySelector("main");
+      var drawer = document.querySelector(".nav__list");
+
+      menu.addEventListener("click", function(e) {
+        drawer.classList.toggle("open");
+        e.stopPropagation();
+      });
+      main.addEventListener("click", function() {
+        drawer.classList.remove("open");
+      });
+
+    </script>
+  </body>
+</html>

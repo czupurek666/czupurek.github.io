@@ -1,0 +1,189 @@
+html {
+  font-family: 'Alegreya Sans SC', 'Arial', sans-serif;
+  font-weight: 300;
+  color: Maroon;
+  margin-top: -10px;
+}
+h2 {
+  font-size: 1.2em;
+  font-weight: 300;
+  margin: 8px 0px 2px 0px;
+}
+h3 {
+  font-size: 1.1em;
+  font-weight: 300;
+  margin: 0px 0px 4px 0px;
+}
+p{
+  margin: 0px;
+}
+/*
+ *
+ * Header
+ *
+ */
+.header {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+ .header__inner {
+   width: inherit;
+   max-width: inherit;
+   margin-left: inherit;
+   margin-right: inherit;
+   position: fixed;
+   height: 104px;
+   background-color: white;
+}
+.logo {
+  vertical-align: top;
+  height: 80px;
+  margin-top: 30px;
+}
+.personal{
+  vertical-align: top;
+  float: right;
+  margin-top: 14px;
+}
+#name {
+  font-size: 1.7em;
+  font-weight: 300;
+  text-align: right;
+  margin-bottom: 10px;
+}
+#job {
+  font-size: 1.2em;
+  text-align: right;
+  margin: 0px;
+}
+/*
+ *
+ * Navigation Bar
+ *
+ */
+.nav {
+  display:flex;
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav__list{
+  position:  fixed;
+  width: inherit;
+  max-width: inherit;
+  margin-left: inherit;
+  margin-right: inherit;
+  height: 26px;
+  background-color: white;
+  border-width: thin;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  margin-top: 104px;
+}
+.nav__item{
+  box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  width: 33.3%;
+  height: inherit;
+  font-size: 1.1em;
+  color: Maroon;
+  text-decoration: none;
+  padding-top: 2px;
+}
+.nav__item:hover {
+  text-decoration: underline;
+}
+#nav_1 {
+  text-align: left;
+}
+#nav_2{
+  text-align: center;
+}
+#nav_3 {
+  text-align: right;
+}
+/*
+ *
+ * Content
+ *
+ */
+.content{
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  padding-top: 26px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+ /*
+  *
+  * my Photo
+  *
+  */
+.my_photo {
+  margin-top: 79px;
+  width: 100%;
+}
+ /*
+  *
+  * Projects
+  *
+  */
+.project{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+.project_title{
+  width: 100%;
+}
+.project_description {
+  width: 75%;
+  height: 120px;
+  align-self: flex-start;
+}
+.project_logo{
+  width: 25%;
+  height: 120px;
+  background-color: whitesmoke;
+  align-self: flex-end;
+}
+.project_img{
+  height: 100%;
+  width: 100%;
+}
+/*
+ *
+ * CV
+ *
+ */
+.cv, table {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+.cv_parts{
+  font-weight: 400;
+}
+.cv_text {
+  background: whitesmoke;
+}
+footer{
+  height: 26px;
+  background-color: white;
+  border-width: thin;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  margin-top: 10px;
+}
